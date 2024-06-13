@@ -1,0 +1,188 @@
+From 3b7fedb0ec136223aeb149feba49fb76dc34914e Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Csizmadia=20M=C3=A1rk?= <airamek@teamorange.hu>
+Date: Thu, 13 Jun 2024 14:49:54 +0200
+Subject: [PATCH] Revert version update from new waterfall commits
+
+
+diff --git a/api/pom.xml b/api/pom.xml
+index 7f0af203..a7fe5292 100644
+--- a/api/pom.xml
++++ b/api/pom.xml
+@@ -11,7 +11,7 @@
+     </parent>
+ 
+     <artifactId>waterfall-api</artifactId>
+-    <version>1.20-R0.3-SNAPSHOT</version>
++    <version>1.20-R0.2-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+     <name>lightfall-API</name>
+diff --git a/module/cmd-alert/pom.xml b/module/cmd-alert/pom.xml
+index 095368b4..2016f6a1 100644
+--- a/module/cmd-alert/pom.xml
++++ b/module/cmd-alert/pom.xml
+@@ -6,13 +6,13 @@
+     <parent>
+         <groupId>io.github.waterfallmc</groupId>
+         <artifactId>waterfall-module</artifactId>
+-        <version>1.20-R0.3-SNAPSHOT</version>
++        <version>1.20-R0.2-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+     <groupId>io.github.waterfallmc</groupId>
+     <artifactId>waterfall-module-cmd-alert</artifactId>
+-    <version>1.20-R0.3-SNAPSHOT</version>
++    <version>1.20-R0.2-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+     <name>cmd_alert</name>
+diff --git a/module/cmd-find/pom.xml b/module/cmd-find/pom.xml
+index 6bf9bdcf..7371de6a 100644
+--- a/module/cmd-find/pom.xml
++++ b/module/cmd-find/pom.xml
+@@ -6,13 +6,13 @@
+     <parent>
+         <groupId>io.github.waterfallmc</groupId>
+         <artifactId>waterfall-module</artifactId>
+-        <version>1.20-R0.3-SNAPSHOT</version>
++        <version>1.20-R0.2-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+     <groupId>io.github.waterfallmc</groupId>
+     <artifactId>waterfall-module-cmd-find</artifactId>
+-    <version>1.20-R0.3-SNAPSHOT</version>
++    <version>1.20-R0.2-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+     <name>cmd_find</name>
+diff --git a/module/cmd-kick/pom.xml b/module/cmd-kick/pom.xml
+index 5e5cab83..9fac0511 100644
+--- a/module/cmd-kick/pom.xml
++++ b/module/cmd-kick/pom.xml
+@@ -6,13 +6,13 @@
+     <parent>
+         <groupId>io.github.waterfallmc</groupId>
+         <artifactId>waterfall-module</artifactId>
+-        <version>1.20-R0.3-SNAPSHOT</version>
++        <version>1.20-R0.2-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+     <groupId>io.github.waterfallmc</groupId>
+     <artifactId>waterfall-module-cmd-kick</artifactId>
+-    <version>1.20-R0.3-SNAPSHOT</version>
++    <version>1.20-R0.2-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+     <name>cmd_kick</name>
+diff --git a/module/cmd-list/pom.xml b/module/cmd-list/pom.xml
+index 670a55f4..d7324d89 100644
+--- a/module/cmd-list/pom.xml
++++ b/module/cmd-list/pom.xml
+@@ -6,13 +6,13 @@
+     <parent>
+         <groupId>io.github.waterfallmc</groupId>
+         <artifactId>waterfall-module</artifactId>
+-        <version>1.20-R0.3-SNAPSHOT</version>
++        <version>1.20-R0.2-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+     <groupId>io.github.waterfallmc</groupId>
+     <artifactId>waterfall-module-cmd-list</artifactId>
+-    <version>1.20-R0.3-SNAPSHOT</version>
++    <version>1.20-R0.2-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+     <name>cmd_list</name>
+diff --git a/module/cmd-send/pom.xml b/module/cmd-send/pom.xml
+index 6c65d8f4..00539f37 100644
+--- a/module/cmd-send/pom.xml
++++ b/module/cmd-send/pom.xml
+@@ -6,13 +6,13 @@
+     <parent>
+         <groupId>io.github.waterfallmc</groupId>
+         <artifactId>waterfall-module</artifactId>
+-        <version>1.20-R0.3-SNAPSHOT</version>
++        <version>1.20-R0.2-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+     <groupId>io.github.waterfallmc</groupId>
+     <artifactId>waterfall-module-cmd-send</artifactId>
+-    <version>1.20-R0.3-SNAPSHOT</version>
++    <version>1.20-R0.2-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+     <name>cmd_send</name>
+diff --git a/module/cmd-server/pom.xml b/module/cmd-server/pom.xml
+index dc3af35e..6785f2a0 100644
+--- a/module/cmd-server/pom.xml
++++ b/module/cmd-server/pom.xml
+@@ -6,13 +6,13 @@
+     <parent>
+         <groupId>io.github.waterfallmc</groupId>
+         <artifactId>waterfall-module</artifactId>
+-        <version>1.20-R0.3-SNAPSHOT</version>
++        <version>1.20-R0.2-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+     <groupId>io.github.waterfallmc</groupId>
+     <artifactId>waterfall-module-cmd-server</artifactId>
+-    <version>1.20-R0.3-SNAPSHOT</version>
++    <version>1.20-R0.2-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+     <name>cmd_server</name>
+diff --git a/module/pom.xml b/module/pom.xml
+index d2f82baf..0917140d 100644
+--- a/module/pom.xml
++++ b/module/pom.xml
+@@ -12,7 +12,7 @@
+ 
+     <groupId>io.github.waterfallmc</groupId>
+     <artifactId>waterfall-module</artifactId>
+-    <version>1.20-R0.3-SNAPSHOT</version>
++    <version>1.20-R0.2-SNAPSHOT</version>
+     <packaging>pom</packaging>
+ 
+     <name>lightfall Modules</name>
+diff --git a/module/reconnect-yaml/pom.xml b/module/reconnect-yaml/pom.xml
+index 7d8cf5c4..a426476d 100644
+--- a/module/reconnect-yaml/pom.xml
++++ b/module/reconnect-yaml/pom.xml
+@@ -6,13 +6,13 @@
+     <parent>
+         <groupId>io.github.waterfallmc</groupId>
+         <artifactId>waterfall-module</artifactId>
+-        <version>1.20-R0.3-SNAPSHOT</version>
++        <version>1.20-R0.2-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+     <groupId>io.github.waterfallmc</groupId>
+     <artifactId>waterfall-module-reconnect-yaml</artifactId>
+-    <version>1.20-R0.3-SNAPSHOT</version>
++    <version>1.20-R0.2-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+     <name>reconnect_yaml</name>
+diff --git a/proxy/pom.xml b/proxy/pom.xml
+index 2b97d32f..e7b98b6a 100644
+--- a/proxy/pom.xml
++++ b/proxy/pom.xml
+@@ -76,7 +76,7 @@
+         </dependency>
+         <dependency>
+             <groupId>io.izzel.lightfall</groupId>
+-            <artifactId>lightfall-api</artifactId>
++            <artifactId>waterfall-api</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+-- 
+2.45.2
+
